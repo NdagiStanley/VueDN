@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "(Stanley Ndagi <stan@md.engineer>)",
   "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
   "devDependencies": {
     "vuepress": "^2.0.0-beta.61"
   }
