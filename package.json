@@ -4,5 +4,8 @@
   "description": "Vuepress boilerplate integrated with Decap CMS hosted on Netlify",
   "main": "index.js",
   "author": "(Stanley Ndagi <stan@md.engineer>)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.61"
+  }
 }
