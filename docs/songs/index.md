@@ -1,3 +1,8 @@
+---
+contributors: false
+lastUpdated: false
+---
+
 # All songs
 
 All pages here contain songs (in Swahili) that I settle on and decide to learn their lyrics, periodically.
@@ -39,4 +44,6 @@ The pages have a standard format.
   - Spotify
 - Lyrics (with translations if available)
 
-<!-- ## Popular songs (TODO: Add when you have a list of songs) -->
+## Popular songs
+
+- [Tuko tayari (Mwanga Band)](/songs/2023-04-10)

@@ -2,6 +2,11 @@ import { defaultTheme, defineUserConfig } from "vuepress";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { getDirname, path } from "@vuepress/utils";
+import { glob } from "glob";
+
+let songFiles = glob
+  .sync("docs/songs/**/*.md")
+  .map((f) => f.replace("docs", "").replace("index.md", ""));
 
 import { description } from "../../package.json";
 
@@ -24,13 +29,24 @@ export default defineUserConfig({
     navbar: [
       {
         text: "Songs",
-        link: "/songs",
+        // notice the trailing / (for the automatic next and prev links based on the sidebar)
+        link: "/songs/",
       },
       {
         text: "GitHub",
         link: "https://github.com/NdagiStanley/vpsdn",
       },
     ],
+    // notice there's a difference between /songs and /songs/
+    // We have the /songs to enable this sidebar for /songs and /songs/ paths
+    sidebar: {
+      "/songs": [
+        {
+          text: "Songs",
+          children: songFiles,
+        },
+      ],
+    },
   }),
 
   // Replace footer
