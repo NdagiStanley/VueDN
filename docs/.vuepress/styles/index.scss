@@ -1,0 +1,11 @@
+.footer,
+.push {
+  height: 50px;
+}
+
+.center {
+  // to align center in Firefox, -webkit-center is not recognized in Firefox
+  // The order matters
+  text-align: center;
+  text-align: -webkit-center;
+}
