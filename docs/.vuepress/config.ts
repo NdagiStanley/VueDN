@@ -1,4 +1,6 @@
 import { defaultTheme, defineUserConfig } from "vuepress";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { searchPlugin } from "@vuepress/plugin-search";
 import { getDirname, path } from "@vuepress/utils";
 
 import { description } from "../../package.json";
@@ -19,6 +21,16 @@ export default defineUserConfig({
   // theme and its config
   theme: defaultTheme({
     logo: "vue.png",
+    navbar: [
+      {
+        text: "Songs",
+        link: "/songs",
+      },
+      {
+        text: "GitHub",
+        link: "https://github.com/NdagiStanley/vpsdn",
+      },
+    ],
   }),
 
   // Replace footer
@@ -28,4 +40,17 @@ export default defineUserConfig({
       "./components/MyHomeFooter.vue"
     ),
   },
+
+  // plugin
+  plugins: [
+    registerComponentsPlugin({
+      // options
+      // Absolute path to the components directory
+      componentsDir: path.resolve(__dirname, "./components"),
+    }),
+    searchPlugin({
+      // options
+      // Default shortcut is key '/'
+    }),
+  ],
 });
