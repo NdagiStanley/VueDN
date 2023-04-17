@@ -11,7 +11,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "docs/.vuepress/public/media" # Media files will be stored in the repo under docs/.vuepress/public/media
 public_folder: "/media" # The src attribute for uploaded media will begin with /media
-summary: "{{dirname}}. Last updated at {{commit_date}}"
+summary: "Last updated at {{commit_date}}"
 editor:
   preview: false # disabled markdown preview in CMS
 collections:
@@ -21,11 +21,13 @@ collections:
     folder: "docs/songs" # The path to the folder where the documents are stored
     nested: # adding a nested object will show the collection folder structure
       depth: 2 # max depth to show in the collection tree
+    create: true # Allow users to create new documents in this collection
+    slug: "{{date}}/index" # Filename template # Outputs sun-apr-02-2023-01-13-17-gmt-0300-east-africa-time (not ideal but is dynamic to date - only at creation not at editing)
+    preview_path: songs/{{date}}
     fields: # The fields for each document, usually in front matter
-      # https://v2.vuepress.vuejs.org/advanced/cookbook/usage-of-client-config.html#layouts
       - {label: "lastUpdated", name: "lastUpdated", widget: "hidden", default: true}
-      - {label: "contributors", name: "contributors", widget: "boolean", default: true}
-      - {label: "externalLinkIcon", name: "externalLinkIcon", widget: "boolean", default: false}
+      - {label: "contributors", hint: "Show contributors at the footer", name: "contributors", widget: "boolean", default: true}
+      - {label: "Show icon for external links", name: "externalLinkIcon", widget: "boolean", default: false}
       - label: "Entry Date"
         name: "date"
         widget: "datetime"
