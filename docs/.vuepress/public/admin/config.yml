@@ -1,0 +1,19 @@
+backend:
+  name: test-repo
+publish_mode: editorial_workflow
+media_folder: "docs/.vuepress/public/media" # Media files will be stored in the repo under docs/.vuepress/public/media
+public_folder: "/media" # The src attribute for uploaded media will begin with /media
+editor:
+  preview: false # disabled markdown preview in CMS
+collections:
+  - name: "songs" # Used in routes, e.g., /admin/collections/songs
+    label: "Songs" # Used in the UI
+    label_singular: Song
+    folder: "docs/songs" # The path to the folder where the documents are stored
+    nested: # adding a nested object will show the collection folder structure
+      depth: 2 # max depth to show in the collection tree
+    fields: # The fields for each document, usually in front matter
+      # https://v2.vuepress.vuejs.org/advanced/cookbook/usage-of-client-config.html#layouts
+      - {label: "lastUpdated", name: "lastUpdated", widget: "hidden", default: true}
+      - {label: "contributors", name: "contributors", widget: "boolean", default: true}
+      - {label: "externalLinkIcon", name: "externalLinkIcon", widget: "boolean", default: false}

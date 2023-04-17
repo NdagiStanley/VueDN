@@ -22,6 +22,14 @@ export default defineUserConfig({
   // If page has description (in frontmatter) then: <global description is replaced by <page description>
   // <meta name="description" content="...">
   description: description,
+  head: [
+    [
+      "script",
+      {
+        src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
+      },
+    ],
+  ],
 
   // theme and its config
   theme: defaultTheme({
