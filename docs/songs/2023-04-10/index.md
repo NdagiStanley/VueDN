@@ -7,9 +7,9 @@ date: 2023-04-10
 
 ## Links
 
-[Youtube](https://youtu.be/eoIHxiyOZAk)
+- [Youtube](https://youtu.be/eoIHxiyOZAk)
 
-[Spotify](https://open.spotify.com/track/4JpNZukH0FMF5hmga7DQba?si=ab648708a17a4eea)
+- [Spotify](https://open.spotify.com/track/4JpNZukH0FMF5hmga7DQba?si=ab648708a17a4eea)
 
 ## Lyrics
 
