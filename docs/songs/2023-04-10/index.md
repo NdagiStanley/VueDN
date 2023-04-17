@@ -1,5 +1,5 @@
 ---
-contributors: true
+contributors: false
 externalLinkIcon: true
 date: 2023-04-10
 ---
