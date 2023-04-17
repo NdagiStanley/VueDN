@@ -1,5 +1,11 @@
+# https://decapcms.org/docs/backends-overview/
 backend:
-  name: test-repo
+  name: git-gateway # adds users without giving them direct write access to your GitHub or GitLab repository.
+  branch: main # default: master
+  cms_label_prefix: decap-cms # default: netlify-cms/
+  # Options:
+  # name: github/gitlab/bitbucket # all users added must have push access to your content repository.
+  # repo: owner-name/repo-name # Path to your GitHub repository
 publish_mode: editorial_workflow
 media_folder: "docs/.vuepress/public/media" # Media files will be stored in the repo under docs/.vuepress/public/media
 public_folder: "/media" # The src attribute for uploaded media will begin with /media
