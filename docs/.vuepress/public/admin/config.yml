@@ -6,9 +6,12 @@ backend:
   # Options:
   # name: github/gitlab/bitbucket # all users added must have push access to your content repository.
   # repo: owner-name/repo-name # Path to your GitHub repository
+
+# https://decapcms.org/docs/configuration-options/
 publish_mode: editorial_workflow
 media_folder: "docs/.vuepress/public/media" # Media files will be stored in the repo under docs/.vuepress/public/media
 public_folder: "/media" # The src attribute for uploaded media will begin with /media
+summary: "{{dirname}}. Last updated at {{commit_date}}"
 editor:
   preview: false # disabled markdown preview in CMS
 collections:
@@ -23,3 +26,10 @@ collections:
       - {label: "lastUpdated", name: "lastUpdated", widget: "hidden", default: true}
       - {label: "contributors", name: "contributors", widget: "boolean", default: true}
       - {label: "externalLinkIcon", name: "externalLinkIcon", widget: "boolean", default: false}
+      - label: "Entry Date"
+        name: "date"
+        widget: "datetime"
+        format: 'YYYY-MM-DD'
+        time_format: false
+        required: true
+      - {label: "Body", name: "body", widget: "markdown", default: "# Song title (Composer/ Artist)"}
