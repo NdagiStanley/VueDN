@@ -15,10 +15,18 @@ lastUpdated: false
 1. Fork the [repository](https://github.com/NdagiStanley/VueDN)
 2. Add a site and link the repository on Netlify
 3. Deploy
-4. [Enable Identity integration](https://docs.netlify.com/visitor-access/identity/#enable-identity-in-the-ui) for your site, to enable Authentication for the CMS
-5. In the live site, go to `/admin` path and sign up
+
+To do the three steps above click this button:
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/NdagiStanley/VueDN"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+
+### Continue setup
+
+1. [Enable Identity integration](https://docs.netlify.com/visitor-access/identity/#enable-identity-in-the-ui) for your site, to enable Authentication for the CMS
+2. **Enable Git Gateway** in Identity settings
+3. In the live site, go to `/admin` path and sign up
    <br>Please note; due to browser extensions, the sign-up modal or Social Auth may not appear. If this happens, set up on an incognito tab.
-6. You're set!
+4. You're set!
 
 ## Reference
 
