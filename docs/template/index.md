@@ -23,7 +23,10 @@ To do the three steps above click this button:
 ### Continue setup
 
 1. [Enable Identity integration](https://docs.netlify.com/visitor-access/identity/#enable-identity-in-the-ui) for your site, to enable Authentication for the CMS
+  <br>Path: Your netlify site's path with `/integrations/identity/netlify` appended.
+  <br>e.g.: `https://app.netlify.com/sites/vuedn/integrations/identity/netlify`
 2. **Enable Git Gateway** in Identity settings
+  <br>Path: Your netlify site's path with `/settings/identity#services` appended.
 3. In the live site, go to `/admin` path and sign up
    <br>Please note; due to browser extensions, the sign-up modal or Social Auth may not appear. If this happens, set up on an incognito tab.
 4. You're set!
