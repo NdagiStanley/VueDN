@@ -16,8 +16,8 @@ export default defineUserConfig({
   lang: "en-US",
   // Global title in HTML <head>.
   // If page has title (in frontmatter) or h1 then: <page title/h1> | <global title>
-  // e.g <title>Vuepress-DecapCMS-Netlify | VDN</title>
-  title: "VDN",
+  // e.g <title>Vuepress-DecapCMS-Netlify | VueDN</title>
+  title: "VueDN",
   // Global description in in HTML <head>.
   // If page has description (in frontmatter) then: <global description is replaced by <page description>
   // <meta name="description" content="...">
@@ -41,8 +41,12 @@ export default defineUserConfig({
         link: "/songs/",
       },
       {
+        text: "Using this template",
+        link: "/template/",
+      },
+      {
         text: "GitHub",
-        link: "https://github.com/NdagiStanley/vpsdn",
+        link: "https://github.com/NdagiStanley/VueDN",
       },
     ],
     // notice there's a difference between /songs and /songs/

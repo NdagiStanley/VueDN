@@ -1,4 +1,6 @@
-# Vuepress-DecapCMS-Netlify
+# VueDN
+
+Vuepress-DecapCMS-Netlify
 
 - Built using VuePress
 - Managed using DecapCMS

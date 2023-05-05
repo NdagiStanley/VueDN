@@ -9,6 +9,7 @@ backend:
 
 # https://decapcms.org/docs/configuration-options/
 publish_mode: editorial_workflow
+display_url: https://vuedn.netlify.app/
 media_folder: "docs/.vuepress/public/media" # Media files will be stored in the repo under docs/.vuepress/public/media
 public_folder: "/media" # The src attribute for uploaded media will begin with /media
 editor:

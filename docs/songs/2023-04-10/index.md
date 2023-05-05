@@ -51,7 +51,7 @@ You're eyes are fire<br>
 And full of love<br>
 For Me ***3**
 
-Now we worship You
+Now we worship You<br>
 You alone are King
 
 ## Related performances
