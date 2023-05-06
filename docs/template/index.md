@@ -18,7 +18,9 @@ lastUpdated: false
 
 To do the three steps above click this button:
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/NdagiStanley/VueDN"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+<div>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/NdagiStanley/VueDN"><img src="/button.svg" alt="Deploy to Netlify" /></a>
+</div>
 
 ### Continue setup
 
