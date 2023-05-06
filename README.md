@@ -6,6 +6,12 @@ Vuepress-DecapCMS-Netlify
 - Managed using DecapCMS
 - Hosted on Netlify
 
+## Use template
+
+[![Deploy to Netlify](docs/.vuepress/public/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NdagiStanley/VueDN)
+
+Follow the steps [here](https://vuedn.netlify.app/template/#continue-setup) to complete setup.
+
 ## Run
 
 Use node version: 18
