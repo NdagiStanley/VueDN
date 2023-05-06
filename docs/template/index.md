@@ -38,7 +38,9 @@ To do the three steps above click this button:
     - and click **Enable Git Gateway**
 
 3. In the live site, go to `/admin` path of your site and sign up
-    <br>Please note; due to browser extensions, the sign-up modal or Social Auth may not appear. If this happens, set up on an incognito tab.
+    <br>Please note:
+    - Due to browser extensions, the sign-up modal or Social Auth may not appear. If this happens, set up on an incognito tab.
+    - `/admin` should be entered manually or linked from another site not your VuePress site. Otherwise, it'll show a 404 page (rightfully so) since the *admin* page is not served by VuePress rather by **Netlify Identity** and **DecapCMS**.
 4. You're set!
 5. Bonus: Update *Registration preferences* and *External providers* in Identity settings, Registration section
     <br>Path: Your netlify site's path with `/settings/identity#registration` appended
