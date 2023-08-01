@@ -3,7 +3,7 @@ contributors: false
 lastUpdated: false
 ---
 
-# All songs
+# All Songs
 
 All pages here contain songs (in Swahili) that I settle on and decide to learn their lyrics, periodically.
 
