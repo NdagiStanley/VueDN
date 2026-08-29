@@ -548,13 +548,12 @@
     prismjs "^1.29.0"
 
 "@vuepress/plugin-register-components@^2.0.0-beta.61":
-  version "2.0.0-beta.61"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-2.0.0-beta.61.tgz#b7b6b2fe81c70e40e3fe965d18fef76c315941e5"
-  integrity sha512-3sbJbiY8pZ3/M4TMfyhIn+aGAlXz+xR57I5k4NQnekzJjDxSiCmaet6FjUeUChX6/eREkVBlitfDvXq4t45RKw==
+  version "2.0.0-rc.132"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-2.0.0-rc.132.tgz#33f76b023d1d89e3ecca84da92fa90245b4e088f"
+  integrity sha512-gnbpAt1INvdb3cbr0LPw0JXwI+UtiNM4GOHYG524Ze7jrrb+M2fXwtJ2H8Bdgi1CiH7ykF1+kfVfab1prAr8Pw==
   dependencies:
-    "@vuepress/core" "2.0.0-beta.61"
-    "@vuepress/utils" "2.0.0-beta.61"
-    chokidar "^3.5.3"
+    chokidar "^5.0.0"
+    picomatch "^4.0.5"
 
 "@vuepress/plugin-search@^2.0.0-beta.61":
   version "2.0.0-beta.61"
@@ -774,6 +773,13 @@ chalk@^5.0.0:
     readdirp "~3.6.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+chokidar@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-5.0.0.tgz#949c126a9238a80792be9a0265934f098af369a5"
+  integrity sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==
+  dependencies:
+    readdirp "^5.0.0"
 
 cli-cursor@^4.0.0:
   version "4.0.0"
@@ -1336,6 +1342,11 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
+picomatch@^4.0.5:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-4.0.7.tgz#6313360034ccb36b3dc61ecbdff78121f90fe21f"
+  integrity sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==
+
 postcss-load-config@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-4.0.1.tgz#152383f481c2758274404e4962743191d73875bd"
@@ -1376,6 +1387,11 @@ readable-stream@^3.4.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
+
+readdirp@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-5.1.1.tgz#520bca06f9d1ae1b96cc0800dbe84b983d19422c"
+  integrity sha512-Kko+Y5XQ6fM+Ce3dq3m9YGxnacYZYl9cA1wZjaF3Vbry2L3i1qVg8+CAgNPsXRArPMUMCaOR7oa9Nqntc43JKA==
 
 readdirp@~3.6.0:
   version "3.6.0"
